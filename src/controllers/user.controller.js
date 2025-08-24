@@ -7,9 +7,7 @@ import {
 } from "../utils/cloudinary.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import jwt from "jsonwebtoken";
-import path from "path";
 import axios from "axios";
-import fs from "fs";
 
 //this is a local funtion to generate token
 const generateAccessAndRefreshToken = async (userId) => {
@@ -670,4 +668,5 @@ export {
    getWatchHistory,
    downloadAvatar,
    downloadCoverImage,
+   error
 };
